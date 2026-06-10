@@ -7,8 +7,8 @@ tagline: Tu hogar en buenas manos.
 description: >-
   Servicios profesionales de reparacion, mantenimiento y mejoras para el hogar.
   Plomeria, electricidad, pintura, carpinteria, limpieza y mas.
-url: 'https://miscosas.eliasjurado.com'
-baseurl: '/lc-contratistas'
+url: 'https://lccontratistas.netlify.app'
+baseurl: ''
 author:
   name: Jhonatan Lopez Carrion
   email: contacto@lccontratistas.com
