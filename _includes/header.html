@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="container site-header__inner">
-    <a href="/" class="site-header__brand" aria-label="{{ site.title }}">
+    <a href="{{ site.baseurl }}/" class="site-header__brand" aria-label="{{ site.title }}">
       <span class="brand-icon">🏗️</span>
       <span class="brand-text"><strong>LC</strong> Contratistas</span>
     </a>
@@ -9,7 +9,7 @@
       {%- for item in site.nav -%}
         {%- assign current = false -%}
         {%- if page.url == item.url -%}{%- assign current = true -%}{%- endif -%}
-        <a href="{{ item.url }}"{% if current %} aria-current="page"{% endif %}{% if item.i18n %} data-i18n="{{ item.i18n }}"{% endif %}>{{ item.label }}</a>
+        <a href="{{ item.url | relative_url }}"{% if current %} aria-current="page"{% endif %}{% if item.i18n %} data-i18n="{{ item.i18n }}"{% endif %}>{{ item.label }}</a>
       {%- endfor -%}
     </nav>
 
@@ -30,7 +30,7 @@
 
   <nav class="site-nav--mobile container" aria-label="Navegacion movil" data-nav-mobile>
     {%- for item in site.nav -%}
-      <a href="{{ item.url }}"{% if item.i18n %} data-i18n="{{ item.i18n }}"{% endif %}>{{ item.label }}</a>
+      <a href="{{ item.url | relative_url }}"{% if item.i18n %} data-i18n="{{ item.i18n }}"{% endif %}>{{ item.label }}</a>
     {%- endfor -%}
     <a href="https://wa.me/{{ site.contact.whatsapp }}?text={{ site.whatsapp_messages.default | url_encode }}"
        class="btn btn--accent" target="_blank" rel="noopener" data-i18n="hero.cta">
