@@ -319,6 +319,59 @@
     &:hover { background: lighten($ink, 12%); color: #fff; }
   }
 }
+.cta-section--mascot {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: $s-5;
+  }
+  .cta-section__body { width: 100%; }
+  .cta-section__mascot img {
+    display: block;
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+  }
+  @media (min-width: $bp-md) {
+    .container { flex-direction: row; justify-content: center; gap: $s-8; }
+    .cta-section__mascot img { width: 210px; }
+  }
+}
+
+// ── Mascota en intros de página ────────────────────────────────────────────────
+.intro-mascot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: $s-4;
+  margin-bottom: $s-5;
+}
+.intro-mascot__text { flex: 1; }
+.intro-mascot__img {
+  flex: 0 0 auto;
+  order: -1;
+  img { display: block; width: 140px; height: auto; }
+}
+@media (min-width: $bp-md) {
+  .intro-mascot {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    gap: $s-6;
+  }
+  .intro-mascot__img { order: 0; img { width: 185px; } }
+  .intro-mascot__text .text-muted { margin-bottom: 0; }
+}
+
+// ── 404 ────────────────────────────────────────────────────────────────────────
+.notfound {
+  text-align: center;
+  padding: $s-8 $s-5;
+  img { display: block; width: 180px; height: auto; margin: 0 auto $s-5; }
+}
 
 // ── Page content ─────────────────────────────────────────────────────────────
 .page-content {

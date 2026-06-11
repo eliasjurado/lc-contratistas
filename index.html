@@ -93,14 +93,19 @@ description: Profesionales confiables para reparacion, mantenimiento y mejoras d
   </div>
 </section>
 
-<section class="cta-section">
+<section class="cta-section cta-section--mascot">
   <div class="container">
-    <h2 data-i18n="cta_section.title">Listo para empezar?</h2>
-    <p data-i18n="cta_section.subtitle">Escribenos por WhatsApp y recibe un presupuesto en minutos.</p>
-    <a href="https://wa.me/{{ site.contact.whatsapp }}?text={{ site.whatsapp_messages.default | url_encode }}"
-       class="btn btn--lg" target="_blank" rel="noopener" data-i18n="cta_section.button">
-      Escribir por WhatsApp
-    </a>
+    <div class="cta-section__mascot">
+      <img src="{{ '/assets/images/mascota-megafono.png' | relative_url }}" alt="" width="288" height="358" loading="lazy">
+    </div>
+    <div class="cta-section__body">
+      <h2 data-i18n="cta_section.title">Listo para empezar?</h2>
+      <p data-i18n="cta_section.subtitle">Escribenos por WhatsApp y recibe un presupuesto en minutos.</p>
+      <a href="https://wa.me/{{ site.contact.whatsapp }}?text={{ site.whatsapp_messages.default | url_encode }}"
+         class="btn btn--lg" target="_blank" rel="noopener" data-i18n="cta_section.button">
+        Escribir por WhatsApp
+      </a>
+    </div>
   </div>
 </section>
 

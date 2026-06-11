@@ -5,8 +5,15 @@ permalink: /services/
 description: Plomeria, electricidad, pintura, carpinteria, limpieza, mudanzas y mas. Profesionales verificados para tu hogar.
 ---
 
-<h1 data-i18n="services_page.title">Nuestros servicios</h1>
-<p class="text-muted" data-i18n="services_page.subtitle">Soluciones profesionales para cada necesidad de tu hogar</p>
+<div class="intro-mascot">
+  <div class="intro-mascot__text">
+    <h1 data-i18n="services_page.title">Nuestros servicios</h1>
+    <p class="text-muted" data-i18n="services_page.subtitle">Soluciones profesionales para cada necesidad de tu hogar</p>
+  </div>
+  <div class="intro-mascot__img">
+    <img src="{{ '/assets/images/mascota-construye.png' | relative_url }}" alt="Mascota de Fokita construyendo" width="287" height="275" loading="lazy">
+  </div>
+</div>
 
 <div class="services-grid" style="margin-top: 2rem;">
   {%- for servicio in site.data.servicios -%}

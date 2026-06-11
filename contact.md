@@ -5,8 +5,15 @@ permalink: /contact/
 description: Contacta a Fokita Soluciones. WhatsApp, telefono y correo electronico. Atencion inmediata.
 ---
 
-<h1 data-i18n="contact_page.title">Contacto</h1>
-<p class="text-muted" data-i18n="contact_page.subtitle">Estamos listos para ayudarte. Elige el canal que prefieras.</p>
+<div class="intro-mascot">
+  <div class="intro-mascot__text">
+    <h1 data-i18n="contact_page.title">Contacto</h1>
+    <p class="text-muted" data-i18n="contact_page.subtitle">Estamos listos para ayudarte. Elige el canal que prefieras.</p>
+  </div>
+  <div class="intro-mascot__img">
+    <img src="{{ '/assets/images/mascota-saluda.png' | relative_url }}" alt="Mascota de Fokita saludando" width="273" height="361" loading="lazy">
+  </div>
+</div>
 
 <div class="contact-grid">
   <div class="contact-card">
