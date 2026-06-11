@@ -6,8 +6,8 @@ tagline: Tu hogar en buenas manos.
 description: >-
   Servicios profesionales de reparacion, mantenimiento y mejoras para el hogar.
   Plomeria, electricidad, pintura, carpinteria, limpieza y mas.
-url: 'https://fokitasoluciones.netlify.app'
-baseurl: ''
+url: 'https://eliasjurado.github.io'
+baseurl: '/lc-contratistas'
 author:
   name: Fokita Soluciones SAC
   email: contacto@fokitasoluciones.com
