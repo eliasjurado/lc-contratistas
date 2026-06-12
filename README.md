@@ -13,16 +13,18 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Abre http://localhost:4000
+Abre http://localhost:4000/fokita-soluciones/
 
 ## Estructura
 
 ```
-lc-contratistas/
+fokita-soluciones/
 ├── _config.yml          ← Configuracion del sitio
 ├── _data/
 │   ├── i18n.yml         ← Diccionario ES/EN
 │   └── servicios.yml    ← Catalogo de servicios
+├── _plugins/
+│   └── tainted_patch.rb ← Fix Ruby 4.0 (tainted?)
 ├── _includes/           ← Header, footer, WhatsApp float
 ├── _layouts/            ← Layouts Jekyll
 ├── _sass/               ← Estilos SCSS
