@@ -16,7 +16,7 @@ timezone: America/Lima
 
 brand:
   primary:   '#1a2744'
-  accent:    '#c59014'
+  accent: '#e8ac1b'
   muted:     '#6b7280'
   white:     '#ffffff'
   light:     '#f8f9fa'
