@@ -224,7 +224,7 @@
     display: block;
     width: 120px;
     height: auto;
-    filter: drop-shadow(0 12px 24px rgba(0,0,0,0.35));
+    filter: drop-shadow(0 0 20px rgba(232,172,27,0.5)) drop-shadow(0 12px 24px rgba(0,0,0,0.35));
   }
 }
 @media (min-width: $bp-md) {
@@ -373,8 +373,7 @@
 .intro-mascot__img {
   flex: 0 0 auto;
   order: -1;
-  overflow: visible;
-  img { display: block; width: 140px; height: auto; max-width: none; }
+  img { display: block; width: 140px; height: auto; margin-top: 10px; }
 }
 @media (min-width: $bp-md) {
   .intro-mascot {
